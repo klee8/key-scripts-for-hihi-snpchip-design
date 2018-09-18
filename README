@@ -1,0 +1,19 @@
+This set of scripts were used in the design of the hihi snpchip. 
+
+divide_into_equal_regions.pl was used to divide bam files into regions of equal length to parallelise GATK re-alignment
+
+vcf_annotate.pl was used to add information to the end of the vcf files
+
+blastparse.pl was used to interrogate BLAST information for SNP positions and gene information
+
+vcf.pos.ann.pl was used to integrate BLAST information into the vcf files
+
+filter_read_depth.pl was used to do an initial pass of read depth filtering on vcfs
+
+setup_split_vcfs.sh was used to set up an awk script to split vcf files by zebra finch chromosome (added during positional annotation)
+
+merge_filter.pl was used to merge the SNP information from different assemblies using the zebra finch position information
+
+get_snps_fasta.pl was used to get the fasta sequences flanking filtered SNPs
+
+
